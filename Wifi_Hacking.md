@@ -102,3 +102,27 @@ BSSID: 02:1A:11:FF:D9:BD
 
 ESSID: 'James Honor 8'
 ```
+What flag do we use to specify a BSSID to attack?
+
+Answer-```-b```
+
+What flag do we use to specify a wordlist?
+
+Answer-```-w```
+
+How do we create a HCCAPX in order to use hashcat to crack the password?
+
+```-j```
+
+Tar.gz needs unzipped.
+Ran command>>```tar -xf tar.gz ```
+
+Using the rockyou wordlist, crack the password in the attached capture. What's the password?
+
+I ran command ``` sudo aircrack-ng -b 02:1A:11:FF:D9:BD -w /usr/share/wordlists/rockyou.txt > NinjaJc01-01.cap```
+
+Answer-```greeneggsandham```
+
+Where is password cracking likely to be fastest, CPU or GPU?
+
+Answer-```GPU```
