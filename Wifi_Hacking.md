@@ -59,5 +59,46 @@ sudo dkms build -m rtl88x2bu -v ${VER}
 sudo dkms install -m rtl88x2bu -v ${VER}
 sudo modprobe 88x2bu
 ```
+ Injection mode helps, as you can use it to deauth a client in order to force a reconnect which forces the handshake to occur again. Otherwise, you have to wait for a client to connect normally.
+
+How do you put the interface “wlan0” into monitor mode with Aircrack tools? (Full command)
+
+Answer-```airmon-ng start wlan0```
+
+What is the new interface name likely to be after you enable monitor mode?
+
+```wlan0mon```
+
+What do you do if other processes are currently trying to use that network adapter? 
+
+```airmon-ng check kill```
+
+What tool from the aircrack-ng suite is used to create a capture?
+
+```airodump-ng```
+
+What flag do you use to set the BSSID to monitor?
+
+```--bssid```
+
+And to set the channel?
+
+```--channel```
+
+And how do you tell it to capture packets to a file?
+
+```-w```
 
 
+# Task 3  Aircrack-ng - Let's Get Cracking
+
+```I will attach a capture for you to practice cracking on. If you are spending more than 3 mins cracking, something is likely wrong. (A single core VM on my laptop took around 1min).
+
+In order to crack the password, we can either use aircrack itself or create a hashcat file in order to use GPU acceleration. There are two different versions of hashcat output file, most likely you want 3.6+ as that will work with recent versions of hashcat.
+
+Useful Information
+
+BSSID: 02:1A:11:FF:D9:BD
+
+ESSID: 'James Honor 8'
+```
