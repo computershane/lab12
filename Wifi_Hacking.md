@@ -50,17 +50,13 @@ I needed dkms
 
 Next command failed
 
-```sudo dkms build -m rtl88x2bu -v ${VER}
-```
+```sudo dkms build -m rtl88x2bu -v ${VER}```
+
 kali needs updated>>>
 
 ```sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
-```
-
-```sudo dkms build -m rtl88x2bu -v ${VER}
-```
-
-```sudo dkms install -m rtl88x2bu -v ${VER}
+sudo dkms build -m rtl88x2bu -v ${VER}
+sudo dkms install -m rtl88x2bu -v ${VER}
 sudo modprobe 88x2bu
 ```
 
